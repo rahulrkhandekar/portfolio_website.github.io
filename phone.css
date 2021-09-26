@@ -1,0 +1,108 @@
+:root {
+    --primary: #3DCFD3;
+    --secondary: #070606;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+
+.container{
+    max-width: 800px;
+}
+
+
+.hero .left img {
+    width: 260px;
+}
+.hero .right h1{
+    font-size:3rem;
+}
+.hero{
+    padding-top:5rem ;
+}
+header{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 94%, 0 100%);
+}
+.about .about-me {
+    height: 340px;
+}
+.services .card-wraper{
+    grid-template-columns: 1fr 1fr;
+}
+.work .card-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog .card-wrapper {
+ 
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.blog {
+   
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 98%, 0 100%);
+    
+}
+header #main-nav{
+    display: none;
+}
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top:40px;
+    right:40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 25px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background:var(--light);
+    width: 50%;
+    height: 100%;
+    padding: 2rem; 
+    padding-top: 5rem; 
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.open{
+    transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 25px;
+}
+
+.mobile-nav ul{
+    list-style:none ;
+}
+.mobile-nav ul li a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.display{
+    display: none;
+}

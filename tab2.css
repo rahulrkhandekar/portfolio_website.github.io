@@ -1,0 +1,91 @@
+.container {
+    max-width: 460px;
+}
+
+.hero {
+    flex-direction: column;
+}
+
+header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+}
+
+.container .right .pad {
+    margin-bottom: 5rem;
+}
+.hero .right{
+    position: absolute;
+    top: 100px;
+    padding: 0 1rem;
+   
+}
+.hero .left {
+    padding-bottom: 4rem;
+    margin-top: -2rem;
+    margin-right: -13rem;
+}
+.hero .right h1 {
+    font-size: 2rem;
+}
+.hero .right h6 {
+    font-size: 1.2rem;
+    
+}
+.about-inner-wrap{
+    flex-direction: column;
+}
+
+.about .right{
+    margin-top: 2rem;
+    text-align: center;
+}
+.about .right .social{
+    justify-content: center;
+}
+section {
+    padding: 4rem 0;
+}
+.services .card-wraper {
+    grid-template-columns: 1fr;
+}
+.freelancer h1{
+    line-height: 1.4;
+}
+.freelancer{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 94%, 0 100%);
+    padding: 4rem 0;
+    padding-bottom: 4rem;
+}
+.reviews .slider .slide {
+    
+    padding: 0 1rem;
+}
+.section-heading + p{
+    margin-bottom: 4rem;
+}
+.reviews .slider-dots {
+    margin-top: 1rem;
+}
+.work .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+.contact .card-wrapper {
+   
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+.contact .card-wrapper .card h6 {
+    
+    margin-bottom: 1rem;
+}
+.section-heading + p {
+    margin-bottom: 4rem;
+}
+.contact .card-wrapper .card img {
+    margin-bottom: 1rem;
+}
+.contact .input-wrap {
+
+    grid-template-columns: repeat(1, 1fr);
+   
+}

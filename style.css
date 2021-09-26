@@ -1,0 +1,480 @@
+:root {
+    --primary: #3DCFD3;
+    --secondary: #070606;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #898989;
+    --light: #F2F2F2;
+}
+@media (min-width:870px){
+    .site-main-wrapper .hamberger , .mobile-nav{
+        display: none;
+    }
+   
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antial;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.left ul {
+    display: flex;
+}
+
+header nav {
+    padding: 1.1rem 0;
+}
+
+header nav .left ul li {
+    list-style: none;
+}
+
+header nav .left ul li a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 1.2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left ul li a:hover {
+    color: var(--primary);
+}
+
+header nav .brand {
+    margin-right: 2rem;
+}
+
+.hero .left img {
+    width: 290px;
+}
+
+.hero .right {
+    color: var(--pure);
+}
+
+.hero .right h6 {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+}
+
+.hero .right h1 {
+    font-size: 3.8rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin-bottom: 1.7rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.about .about-me {
+    height: 380px;
+}
+
+.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.about h1 span {
+    color: var(--primary);
+}
+
+.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.about p {
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.about .social {
+    display: flex;
+}
+
+.about .social a {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.about .social a img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.about .social a:hover {
+    background: var(--primary);
+}
+
+.section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+}
+
+.section-heading+p {
+    color: var(--ternary);
+    font-family: 'lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.section-heading span {
+    color: var(--primary);
+}
+
+.services .card-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+    text-align: center;
+}
+
+.services {
+    background: var(--light);
+}
+
+.services .card-wraper .card {
+    background: var(--pure);
+    padding: 2.6rem 1.8rem;
+    position: relative;
+    padding-top: 5rem;
+    transition: all 0.3s ease;
+}
+
+.services .card-wraper .card img {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 10px;
+}
+
+.services .card-wraper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .card-wraper .card p {
+    font-family: 'lato', 'sans-serif';
+    line-height: 1.6;
+}
+
+.services .card-wraper .card:hover {
+    background: var(--dark);
+}
+
+.services .card-wraper .card:hover h2, .services .card-wraper .card:hover p {
+    color: var(--pure);
+}
+
+.freelancer {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+.freelancer h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.freelancer p {
+    margin-bottom: 2rem;
+    font-family: 'lato', sans-serif;
+}
+
+.reviews .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.reviews .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 9rem;
+}
+
+.reviews .slider .slide p {
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+.reviews .slider .slide span {
+    font-size: 0.8rem;
+}
+
+.reviews .slider-dots .dots {
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+.reviews .slider-dots {
+    margin-top: 3rem;
+}
+
+.reviews .slider-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.reviews .dots li.slick-active button {
+    background: var(--primary);
+    width: 20px;
+}
+
+.work {
+    background: var(--light);
+}
+
+.work .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.work .card-wrapper .card {
+    position: relative;
+    height: 250px;
+}
+
+.work .card-wrapper .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61, 207, 211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.work .card-wrapper .card:hover .overlay {
+    opacity: 0.8;
+}
+
+.work .card-wrapper .card .overlay a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.work .card-wrapper .card img {
+    width: 100%;
+}
+
+.blog {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 87%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+.blog .section-heading {
+    color: var(--pure);
+}
+
+.blog .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+.blog .card-wrapper .card {
+    background: var(--pure);
+}
+
+.blog .card-wrapper .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog .card-wrapper .card .card-content {
+    padding: 2rem;
+}
+
+.blog .card-wrapper .card .card-content h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.blog .card-wrapper .card .card-content a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.blog .card-wrapper .card .card-content a:hover {
+    color: var(--primary);
+}
+
+.blog .card-wrapper .card .card-content span {
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+
+.blog .card-wrapper .card .card-content p {
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact .card-wrapper {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact .card-wrapper .card {
+    text-align: center;
+}
+
+.contact .card-wrapper .card img {
+    margin-bottom: 2rem;
+}
+
+.contact .card-wrapper .card h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.contact .card-wrapper .card h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--ternary);
+    margin-bottom: 4rem;
+}
+
+.contact .input-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact .input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .input-wrap-2 input {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.contact input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact .input-wrap-2 textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--ternary);
+    font-size: 1rem;
+}
+
+.contact .input-wrap-2 textarea:focus {
+    outline: none;
+}
+
+.contact .container .input:focus {
+    outline: none;
+}
+.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+    width: 150px;
+}
+footer .footer-social a{
+    margin-right: 1rem;
+}
+footer .footer-social{
+    margin-bottom: 3rem;
+    margin-right: -1rem;
+}
+footer .copyright{
+    color: var(--ternary);
+}
